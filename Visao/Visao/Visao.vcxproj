@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="aulas.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="vc.c" />
   </ItemGroup>

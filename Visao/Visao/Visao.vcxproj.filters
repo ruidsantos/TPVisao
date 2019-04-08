@@ -15,10 +15,13 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.c">
+    <ClCompile Include="vc.c">
       <Filter>Arquivos de Recurso</Filter>
     </ClCompile>
-    <ClCompile Include="vc.c">
+    <ClCompile Include="aulas.c">
+      <Filter>Arquivos de Recurso</Filter>
+    </ClCompile>
+    <ClCompile Include="main.c">
       <Filter>Arquivos de Recurso</Filter>
     </ClCompile>
   </ItemGroup>
