@@ -1,8 +1,58 @@
-﻿  aulas.c
-c:\users\rui santos\documents\tpvisao\visao\visao\aulas.c(236): warning C4244: '=': conversion from 'float' to 'unsigned char', possible loss of data
-c:\users\rui santos\documents\tpvisao\visao\visao\aulas.c(270): warning C4244: '=': conversion from 'float' to 'unsigned char', possible loss of data
-c:\users\rui santos\documents\tpvisao\visao\visao\aulas.c(305): warning C4244: '=': conversion from 'float' to 'unsigned char', possible loss of data
-c:\users\rui santos\documents\tpvisao\visao\visao\aulas.c(653): warning C4789: buffer 'image' of size 16 bytes will be overrun; 8 bytes will be written starting at offset 16
-c:\users\rui santos\documents\tpvisao\visao\visao\aulas.c(741): warning C4715: 'main123': not all control paths return a value
-MSVCRTD.lib(exe_main.obj) : error LNK2019: unresolved external symbol main referenced in function "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ)
-C:\Users\Rui Santos\Documents\TPVisao\Visao\x64\Debug\Visao.exe : fatal error LNK1120: 1 unresolved externals
+﻿  vc.c
+c:\users\rui\documents\tpvisao\visao\visao\vc.c(243): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+c:\users\rui\documents\tpvisao\visao\visao\vc.c(283): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+c:\users\rui\documents\tpvisao\visao\visao\vc.c(200): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(208): note: see declaration of 'fopen'
+c:\users\rui\documents\tpvisao\visao\visao\vc.c(220): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(2263): note: see declaration of 'sscanf'
+c:\users\rui\documents\tpvisao\visao\visao\vc.c(221): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(2263): note: see declaration of 'sscanf'
+c:\users\rui\documents\tpvisao\visao\visao\vc.c(261): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(2263): note: see declaration of 'sscanf'
+c:\users\rui\documents\tpvisao\visao\visao\vc.c(262): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(2263): note: see declaration of 'sscanf'
+c:\users\rui\documents\tpvisao\visao\visao\vc.c(263): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(2263): note: see declaration of 'sscanf'
+c:\users\rui\documents\tpvisao\visao\visao\vc.c(316): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(208): note: see declaration of 'fopen'
+c:\users\rui\documents\tpvisao\visao\visao\vc.c(431): warning C4101: 'y': unreferenced local variable
+c:\users\rui\documents\tpvisao\visao\visao\vc.c(431): warning C4101: 'x': unreferenced local variable
+c:\users\rui\documents\tpvisao\visao\visao\vc.c(462): warning C4101: 'y': unreferenced local variable
+c:\users\rui\documents\tpvisao\visao\visao\vc.c(462): warning C4101: 'x': unreferenced local variable
+c:\users\rui\documents\tpvisao\visao\visao\vc.c(493): warning C4101: 'y': unreferenced local variable
+c:\users\rui\documents\tpvisao\visao\visao\vc.c(493): warning C4101: 'x': unreferenced local variable
+c:\users\rui\documents\tpvisao\visao\visao\vc.c(643): warning C4101: 'bf': unreferenced local variable
+c:\users\rui\documents\tpvisao\visao\visao\vc.c(643): warning C4101: 'gf': unreferenced local variable
+c:\users\rui\documents\tpvisao\visao\visao\vc.c(643): warning C4101: 'rf': unreferenced local variable
+c:\users\rui\documents\tpvisao\visao\visao\vc.c(717): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+c:\users\rui\documents\tpvisao\visao\visao\vc.c(718): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+c:\users\rui\documents\tpvisao\visao\visao\vc.c(719): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+c:\users\rui\documents\tpvisao\visao\visao\vc.c(705): warning C4101: 'value': unreferenced local variable
+c:\users\rui\documents\tpvisao\visao\visao\vc.c(705): warning C4101: 'saturation': unreferenced local variable
+c:\users\rui\documents\tpvisao\visao\visao\vc.c(705): warning C4101: 'hue': unreferenced local variable
+c:\users\rui\documents\tpvisao\visao\visao\vc.c(746): warning C4101: 'value': unreferenced local variable
+c:\users\rui\documents\tpvisao\visao\visao\vc.c(746): warning C4101: 'saturation': unreferenced local variable
+c:\users\rui\documents\tpvisao\visao\visao\vc.c(746): warning C4101: 'b': unreferenced local variable
+c:\users\rui\documents\tpvisao\visao\visao\vc.c(747): warning C4101: 'rgb_max': unreferenced local variable
+c:\users\rui\documents\tpvisao\visao\visao\vc.c(746): warning C4101: 'hue': unreferenced local variable
+c:\users\rui\documents\tpvisao\visao\visao\vc.c(746): warning C4101: 'g': unreferenced local variable
+c:\users\rui\documents\tpvisao\visao\visao\vc.c(747): warning C4101: 'rgb_min': unreferenced local variable
+c:\users\rui\documents\tpvisao\visao\visao\vc.c(746): warning C4101: 'r': unreferenced local variable
+c:\users\rui\documents\tpvisao\visao\visao\vc.c(805): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\rui\documents\tpvisao\visao\visao\vc.c(786): warning C4101: 'value': unreferenced local variable
+c:\users\rui\documents\tpvisao\visao\visao\vc.c(786): warning C4101: 'saturation': unreferenced local variable
+c:\users\rui\documents\tpvisao\visao\visao\vc.c(786): warning C4101: 'b': unreferenced local variable
+c:\users\rui\documents\tpvisao\visao\visao\vc.c(787): warning C4101: 'rgb_max': unreferenced local variable
+c:\users\rui\documents\tpvisao\visao\visao\vc.c(786): warning C4101: 'hue': unreferenced local variable
+c:\users\rui\documents\tpvisao\visao\visao\vc.c(786): warning C4101: 'g': unreferenced local variable
+c:\users\rui\documents\tpvisao\visao\visao\vc.c(787): warning C4101: 'rgb_min': unreferenced local variable
+c:\users\rui\documents\tpvisao\visao\visao\vc.c(786): warning C4101: 'r': unreferenced local variable
+c:\users\rui\documents\tpvisao\visao\visao\vc.c(877): warning C4244: '=': conversion from 'long' to 'float', possible loss of data
+c:\users\rui\documents\tpvisao\visao\visao\vc.c(901): warning C4101: 'pos_dst': unreferenced local variable
+c:\users\rui\documents\tpvisao\visao\visao\vc.c(964): warning C4101: 'pos_dst': unreferenced local variable
+c:\users\rui\documents\tpvisao\visao\visao\vc.c(1369): warning C4244: '=': conversion from 'float' to 'unsigned char', possible loss of data
+c:\users\rui\documents\tpvisao\visao\visao\vc.c(1324): warning C4101: 'i': unreferenced local variable
+c:\users\rui\documents\tpvisao\visao\visao\vc.c(1386): warning C4101: 'pos_dst': unreferenced local variable
+c:\users\rui\documents\tpvisao\visao\visao\vc.c(1385): warning C4101: 'xfinal': unreferenced local variable
+c:\users\rui\documents\tpvisao\visao\visao\vc.c(1385): warning C4101: 'yfinal': unreferenced local variable
+  Visao.vcxproj -> C:\Users\Rui\Documents\TPVisao\Visao\x64\Debug\Visao.exe

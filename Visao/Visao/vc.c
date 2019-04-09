@@ -1372,31 +1372,60 @@ int vc_gray_histogram_equalization(IVC *srcdst)
 	return 0;
 }
 
-int vc_draw_image(OVC *blobs,IVC *src, IVC* dst,int nblobs)
+int vc_draw_image(OVC *blobs,IVC *src,int nblobs)
 {
 	//ver caderno de base de dadosasd
 	unsigned char *datasrc = (unsigned char *)src->data;
-	int bytesperline_src = src->width * src->channels;
+	int bytesperline_src = src->bytesperline;
 	int channels_src = src->channels;
-	unsigned char *datadst = (unsigned char *)dst->data;
-	int bytesperline_dst = dst->width * dst->channels;
-	int channels_dst = dst->channels;
-	int width_src = src->width;
-	int height_src = src->height;
+	int width;
+	int height;
 	int x, y;
+	int xinitial, yinitial;
+	int xfinal, yfinal;
 	long int pos_src, pos_dst;
-	int i = 0;
+	int i;
 
 	//ciclos que percorrem as imagens de forma a desenhar
-	while (i < nblobs) {
-		for (x = blobs[i].x ; x <= blobs[i].width; x++)
+	for (i = 0; i < nblobs; i++) {
+		
+		width = blobs[i].width;
+		height = blobs[i].height;
+		xinitial = blobs[i].x;
+		yinitial = blobs[i].y;
+	//	xfinal = blobs[i].x + height;
+		//yfinal = blobs[i].y + width;
+		for (x = blobs[i].x ; x <= (xinitial+width); x++)
 		{
 			y = blobs[i].y;
 			pos_src = y * bytesperline_src + x * channels_src;
-			datadst[pos_src] = 0;
+			datasrc[pos_src] = 255;
 
 		}
-		i++;
+		
+		for (y = blobs[i].y; y <=( yinitial+height); y++)
+		{
+			x = blobs[i].x;
+			pos_src = y * bytesperline_src + x * channels_src;
+			datasrc[pos_src] = 255;
+
+		}
+
+		for (x = xinitial; x <= (xinitial + width); x++)
+		{
+			y = (yinitial + height);
+			pos_src = y * bytesperline_src + x * channels_src;
+			datasrc[pos_src] = 255;
+
+		}
+
+		for (y = yinitial; y<= (yinitial + height); y++)
+		{
+			x = (xinitial + width);
+			pos_src = y * bytesperline_src + x * channels_src;
+			datasrc[pos_src] = 255;
+
+		}
 	}
 	return 0;
 }

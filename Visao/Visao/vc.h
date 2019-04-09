@@ -96,4 +96,4 @@ int vc_binary_blob_info(IVC *src, OVC *blobs, int nblobs);
 int vc_gray_histogram_equalization(IVC *srcdst);
 
 //Função para desenhar
-int vc_draw_image(OVC* blobs, IVC *src, IVC* dst,int nblobs);
+int vc_draw_image(OVC* blobs, IVC *src,int nblobs);
