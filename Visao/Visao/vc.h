@@ -97,3 +97,5 @@ int vc_gray_histogram_equalization(IVC *srcdst);
 
 //Função para desenhar
 int vc_draw_image(OVC* blobs, IVC *src,int nblobs);
+//função para encontrar as cores
+int vc_color_finder(OVC *blobs, IVC *src, int nblobs);

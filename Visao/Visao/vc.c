@@ -1429,3 +1429,54 @@ int vc_draw_image(OVC *blobs,IVC *src,int nblobs)
 	}
 	return 0;
 }
+
+int vc_color_finder(OVC *blobs, IVC *src, int nblobs)
+{
+
+	unsigned char *data = (unsigned char *)src->data;
+	int width = src->width;
+	int height = src->height;
+	int bytesperline = src->bytesperline;
+	int channels = src->channels;
+	int x, y, i, k;
+	float cdfmin = 1.0f;
+	long int pos;
+	int nval[100] = { 0 };
+	int h, s, v;
+
+	int npixeis = height * width;
+	int l = 256;
+	int size;
+
+	if ((src->width <= 0) || (src->height <= 0) || (src->data == NULL)) return 0;
+	if (channels != 3) return 0;
+
+	/*for (y = 0; y < height; y++)
+	{
+		for (x = 0; x < width; x++)
+		{
+			pos = y * bytesperline + x * channels;
+			nval[data[pos]]++;
+		}
+	}*/
+	i = 0;
+	while (i < nblobs)
+	{
+		x = blobs[i].xc;
+		y = blobs[i].yc;
+
+		pos = y * bytesperline + x * channels;
+		nval[data[pos]]++;
+		i++;
+	}
+	k = 0;
+	while (k < 256)
+	{
+		if (nval[k] != 0)
+		{
+			printf("%d\n", nval[k]);
+		}
+		k++;
+	}
+	return 1;
+}
