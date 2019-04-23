@@ -17,7 +17,7 @@ int main()
 	OVC *nobjetos6;
 	OVC *nobjetos7;
 
-	image[0] = vc_read_image("Imagens/Imagem02.ppm");
+	image[0] = vc_read_image("Imagens/Imagem01.ppm");
 	if (image[0] == NULL)
 	{
 		printf("Error -> vc_read_image():\tFile not found.\n");
@@ -66,7 +66,7 @@ int main()
 	}
 	//imagens que sao usadas para as segmentações - São necessárias 5 imagens por cada ficha devido ás diversas funções que são utilizadas
 	//imagens para a segmentação de peças brancas
-	image[6] = vc_image_new(image[0]->width, image[0]->height, 1, image[0]->levels);
+	image[6] = vc_image_new(image[0]->width, image[0]->height, image[0]->channels, image[0]->levels);
 	if (image[6] == NULL)
 	{
 		printf("Error -> vc_image_new():\tFail to create file.\n");
@@ -320,12 +320,13 @@ int main()
 	}
 	//SEGMENTAÇÃO DO FUNDO PARA OBTER A QUANTIDADE DE OBJETOS NO TOTAL
 	vc_rgb_to_hsv(image[0]);
-	vc_hsv_segmentation(image[0], 10, 45, 10, 38, 55, 90);
+	//vc_hsv_segmentation(image[0], 10, 229, 0, 95, 10, 100);
+	//vc_hsv_segmentation(image[0], 10, 45, 10, 38, 55, 90);
 	vc_rgb_to_gray(image[0], image[1]);
 	vc_gray_negative(image[1]);
-
+	vc_write_image("vc00015.ppm", image[1]);
 	vc_binary_open(image[1], image[2], 5, 5);
-	vc_binary_close(image[2], image[3], 3, 3);
+	vc_binary_close(image[2], image[3],3, 3);
 
 	nobjetos = vc_binary_blob_labelling(image[3], image[4], &numero[0]);
 	vc_binary_blob_info(image[4], nobjetos, numero[0]);
@@ -551,6 +552,7 @@ int main()
 	system("FilterGear vc0002.ppm"); // Output
 	system("FilterGear vc00010.ppm"); // Output
 	system("FilterGear vc00011.ppm"); // Output
+	system("FilterGear vc00015.ppm"); // Output
 
 	printf("\nPress any key to exit.\n");
 	getchar();

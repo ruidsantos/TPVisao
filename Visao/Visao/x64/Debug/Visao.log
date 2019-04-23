@@ -1,3 +1,1 @@
-﻿  main.c
-c:\users\rui\documents\tpvisao\visao\visao\main.c(548): warning C4013: 'system' undefined; assuming extern returning int
-  Visao.vcxproj -> C:\Users\Rui\Documents\TPVisao\Visao\x64\Debug\Visao.exe
+﻿  Visao.vcxproj -> C:\Users\Rui\Documents\TPVisao\Visao\x64\Debug\Visao.exe
