@@ -1,8 +1,1 @@
-﻿  aulas.c
-c:\users\rui santos\documents\tpvisao\visao\visao\aulas.c(236): warning C4244: '=': conversion from 'float' to 'unsigned char', possible loss of data
-c:\users\rui santos\documents\tpvisao\visao\visao\aulas.c(270): warning C4244: '=': conversion from 'float' to 'unsigned char', possible loss of data
-c:\users\rui santos\documents\tpvisao\visao\visao\aulas.c(305): warning C4244: '=': conversion from 'float' to 'unsigned char', possible loss of data
-c:\users\rui santos\documents\tpvisao\visao\visao\aulas.c(653): warning C4789: buffer 'image' of size 16 bytes will be overrun; 8 bytes will be written starting at offset 16
-c:\users\rui santos\documents\tpvisao\visao\visao\aulas.c(741): warning C4715: 'main123': not all control paths return a value
-MSVCRTD.lib(exe_main.obj) : error LNK2019: unresolved external symbol main referenced in function "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ)
-C:\Users\Rui Santos\Documents\TPVisao\Visao\x64\Debug\Visao.exe : fatal error LNK1120: 1 unresolved externals
+﻿  Visao.vcxproj -> C:\Users\Rui\Documents\TPVisao\Visao\x64\Debug\Visao.exe
